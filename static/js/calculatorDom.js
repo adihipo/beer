@@ -3,6 +3,12 @@ const times = document.getElementById('time');
 const beer = document.getElementById('beer');
 const wine = document.getElementById('wine');
 const shot = document.getElementById('shot');
+const plusbeer = document.getElementById('plusbeer');
+const minusbeer = document.getElementById('minusbeer');
+const pluswine = document.getElementById('pluswine');
+const minuswine = document.getElementById('minuswine');
+const plusshot = document.getElementById('plusshot');
+const minusshot = document.getElementById('minusshot');
 const bloodAlcohol = document.getElementById('bloodalcohol');
 const form = document.getElementById('form');
 const submit = document.getElementById('submit');
@@ -14,6 +20,30 @@ const sober = document.getElementById('sober');
 // const sex =  document.querySelector('input[name="sex"]:checked').value;
 
 //console.log(new Date().toLocaleString());
+
+plusbeer.onclick = () => {
+  beer.value++;
+};
+
+minusbeer.onclick = () => {
+  beer.value--;
+};
+
+pluswine.onclick = () => {
+  wine.value++;
+};
+
+minuswine.onclick = () => {
+  wine.value--;
+};
+
+plusshot.onclick = () => {
+  shot.value++;
+};
+
+minusshot.onclick = () => {
+  shot.value--;
+};
 
 submit.onclick = () => { 
   if(checkRequiredFields()) {
@@ -72,10 +102,10 @@ const genderNumber = () => {
 const setDescription = (number) => {
   if(number < 0.5) {
     title =  'Normal (0 - 0.5)';
-    descriptontext = 'You seem normal. You should drink more.';
+    descriptiontext = 'You seem normal. You should drink more.';
   } else if(number < 1.2) {
     title = 'Euphoric (0.5 - 1.2)';
-    descriptontext = 'You feel euphoric and free because of alcohol. You should do something silly!';
+    descriptiontext = 'You feel euphoric and free because of alcohol. You should do something silly!';
   } else if(number < 2.1) {
     title = 'Pumped (1.2 - 2.1)';
     descriptiontext = 'There is some inbalance in your mood. You may do something that you normally wouldn\'t';
