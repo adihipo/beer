@@ -31,3 +31,20 @@ while(timer <= 10) {
   timer += 0.5;
 };
 
+beer.onchange = () => {
+  if(parseInt(beer.value) <= 0) {
+    beer.value = 0;
+  }
+};
+
+wine.onchange = () => {
+  if(parseInt(wine.value) <= 0) {
+    wine.value = 0;
+  }
+};
+
+shot.onchange = () => {
+  if(parseInt(shot.value) <= 0) {
+    shot.value = 0;
+  }
+};
