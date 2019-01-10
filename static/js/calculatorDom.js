@@ -53,6 +53,7 @@ const setBloodAlcoholText = () => {
   var grammShot = parseInt(shot.value) * 0.4 * 40 * 0.8;
   var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / (kg.value * genderNumber())) - parseInt(time.value) * 0.15;
   bloodAlcohol.textContent = bloodAlcoholText;
+  getGiphy(bloodAlcoholText);
   setDescription(bloodAlcoholText);
   sober.textContent = bloodAlcoholText / 0.15;
 };
@@ -84,7 +85,7 @@ const setDescription = (number) => {
     title = 'Sleepy (2.8 - 3.8)';
     descriptiontext = 'Moves uncoordinated and slow. Reaction time is really bad. You may experience extreme nausea, vomiting. You can fall asleep anywhere even in any uncomfortable position.';
   } else if(number < 5) {
-    title = 'Choma (3.8 - 5)';
+    title = 'Coma (3.8 - 5)';
     descriptiontext = 'Total loss of consciousness and low body temperature. Your circulation and breathing become uncoordinated.';
   } else {
     title = 'Dead (5 - )';

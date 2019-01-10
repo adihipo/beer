@@ -38,7 +38,7 @@ height: 100px;
 }
 
 #content {
-  background-color: burlywood;
+  background: url("/static/pics/woodenwall.jpeg") no-repeat;
   padding: 20px;
   border-radius: 15px;
 }
