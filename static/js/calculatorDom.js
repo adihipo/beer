@@ -48,9 +48,9 @@ const checkRequiredFields = () => {
 };
 
 const setBloodAlcoholText = () => {
-  var grammBeer = parseInt(beer.value) * 4.5 * 0.8; 
-  var grammWine = parseInt(wine.value) * 12 * 0.8;
-  var grammShot = parseInt(shot.value) * 40 * 0.8;
+  var grammBeer = parseInt(beer.value) * 5 * 4.5 * 0.8; 
+  var grammWine = parseInt(wine.value) * 1 * 12 * 0.8;
+  var grammShot = parseInt(shot.value) * 0.4 * 40 * 0.8;
   var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / (kg.value * genderNumber())) - parseInt(time.value) * 0.15;
   bloodAlcohol.textContent = bloodAlcoholText;
   setDescription(bloodAlcoholText);
