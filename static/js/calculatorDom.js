@@ -8,6 +8,8 @@ const form = document.getElementById('form');
 const submit = document.getElementById('submit');
 const result = document.getElementById('result');
 const goBack = document.getElementById('goback');
+const description = document.getElementById('description');
+const sober = document.getElementById('sober');
 
 //console.log(new Date().toLocaleString());
 
@@ -49,6 +51,26 @@ const setBloodAlcoholText = () => {
   var grammBeer = parseInt(beer.value) * 4.5 * 0.8; 
   var grammWine = parseInt(wine.value) * 12 * 0.8;
   var grammShot = parseInt(shot.value) * 40 * 0.8;
-  var bloodAlcoholText = (grammBeer + grammWine + grammShot) / kg.value;
+  var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / kg.value) - parseInt(times.value) * 0.16;
   bloodAlcohol.textContent = bloodAlcoholText;
+  description.textContent = setDescription(bloodAlcoholText);
+  sober.textContent = bloodAlcoholText / 0.16;
+};
+
+const setDescription = (number) => {
+  if(number < 0.5) {
+    return '0-0.5';
+  } else if(number < 1.2) {
+    return '0.5-1.2';
+  } else if(number < 2.1) {
+    return '1.2-2.1';
+  } else if(number < 2.8) {
+    return '2.1-2.8';
+  } else if(number < 3.8) {
+    return '2.8-3.8';
+  } else if(number < 5){
+    return '3.8-5';
+  } else {
+    return 'dead';
+  }
 };
