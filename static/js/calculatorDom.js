@@ -51,10 +51,10 @@ const setBloodAlcoholText = () => {
   var grammBeer = parseInt(beer.value) * 4.5 * 0.8; 
   var grammWine = parseInt(wine.value) * 12 * 0.8;
   var grammShot = parseInt(shot.value) * 40 * 0.8;
-  var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / kg.value) - parseInt(times.value) * 0.16;
+  var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / (kg.value * 0.62)) - parseInt(times.value) * 0.15;
   bloodAlcohol.textContent = bloodAlcoholText;
   description.textContent = setDescription(bloodAlcoholText);
-  sober.textContent = bloodAlcoholText / 0.16;
+  sober.textContent = bloodAlcoholText / 0.15;
 };
 
 const setDescription = (number) => {
