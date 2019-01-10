@@ -17,9 +17,7 @@ const goBack = document.getElementById('goback');
 const descriptionTitle = document.getElementById('descriptiontitle');
 const description = document.getElementById('description');
 const sober = document.getElementById('sober');
-<<<<<<< HEAD
-const imd =  document.getElementById('img');
-=======
+const img =  document.getElementById('img');
 const radios = document.getElementsByName('sex');
 const femaleLabel = document.getElementById('femalelabel');
 const maleLabel = document.getElementById('malelabel');
