@@ -3,7 +3,9 @@ plusbeer.onclick = () => {
 };
 
 minusbeer.onclick = () => {
-  beer.value--;
+  if(beer.value != 0) {
+    beer.value--;
+  }
 };
 
 pluswine.onclick = () => {
@@ -11,7 +13,9 @@ pluswine.onclick = () => {
 };
 
 minuswine.onclick = () => {
-  wine.value--;
+  if(wine.value != 0) {
+    wine.value--;
+  }
 };
 
 plusshot.onclick = () => {
@@ -19,7 +23,9 @@ plusshot.onclick = () => {
 };
 
 minusshot.onclick = () => {
-  shot.value--;
+  if(shot.value != 0) {
+    shot.value--;
+  }
 };
 
 submit.onclick = () => { 
@@ -38,10 +44,6 @@ goBack.onclick = () => {
 const checkRequiredFields = () => {
   if(isNaN(parseInt(kg.value))|| document.querySelector('input[name="sex"]:checked') == null) {
     alert('Please set weight and your gender!');
-    return false;
-  }
-  if(parseInt(beer.value) < 0 || parseInt(wine.value) < 0 || parseInt(shot.value) < 0) {
-    alert('Minus drink does not exist!');
     return false;
   }
   return true;
