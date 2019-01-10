@@ -10,6 +10,7 @@ const result = document.getElementById('result');
 const goBack = document.getElementById('goback');
 const description = document.getElementById('description');
 const sober = document.getElementById('sober');
+// const sex =  document.querySelector('input[name="sex"]:checked').value;
 
 //console.log(new Date().toLocaleString());
 
@@ -28,8 +29,8 @@ goBack.onclick = () => {
 };
 
 const checkRequiredFields = () => {
-  if(isNaN(parseInt(kg.value))) {
-    alert('Please set weight');
+  if(isNaN(parseInt(kg.value))|| document.querySelector('input[name="sex"]:checked') == null) {
+    alert('Please set weight and your gender!');
     return false;
   }
   return true;
