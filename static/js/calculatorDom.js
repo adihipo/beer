@@ -11,11 +11,13 @@ const goBack = document.getElementById('goback');
 
 //console.log(new Date().toLocaleString());
 
-submit.onclick = () => {
-  setNaNsToZeros();
-  setBloodAlcoholText();
-  result.classList.remove('hidden');
-  form.classList.add('hidden');
+submit.onclick = () => { 
+  if(checkRequiredFields()) {
+    setNaNsToZeros();
+    setBloodAlcoholText();
+    result.classList.remove('hidden');
+    form.classList.add('hidden');
+  }
 };
 
 goBack.onclick = () => {
@@ -24,19 +26,29 @@ goBack.onclick = () => {
 };
 
 const checkRequiredFields = () => {
-  if(isNaN(kg) || isNaN(time)) alert('Please provide time and weight!');
+  if(isNaN(parseInt(kg.value))) {
+    alert('Please set weight');
+    return false;
+  }
+  return true;
 };
 
 const setNaNsToZeros = () => {
-  if(isNaN(beer.value)) beer.value = 0;
-  if(isNaN(wine.value)) wine.value = 0;
-  if(isNaN(shot.value)) shot.value = 0;
+  if(isNaN(parseInt(beer.value))) {
+    beer.value = 0;
+  }
+  if(isNaN(parseInt(wine.value))) {
+    wine.value = 0;
+  }
+  if(isNaN(parseInt(shot.value))) {
+    shot.value = 0;
+  }
 };
 
 const setBloodAlcoholText = () => {
-  let grammBeer = beer.value * 4.5 * 0.8; 
-  let grammWine = wine.value * 12 * 0.8;
-  let grammShot = shot.value * 40 * 0.8;
-  let bloodAlcoholText = (grammBeer + grammWine + grammShot) / kg;
+  var grammBeer = parseInt(beer.value) * 4.5 * 0.8; 
+  var grammWine = parseInt(wine.value) * 12 * 0.8;
+  var grammShot = parseInt(shot.value) * 40 * 0.8;
+  var bloodAlcoholText = (grammBeer + grammWine + grammShot) / kg.value;
   bloodAlcohol.textContent = bloodAlcoholText;
 };
