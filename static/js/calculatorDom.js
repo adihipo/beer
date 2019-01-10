@@ -1,26 +1,3 @@
-const kg = document.getElementById('kg');
-const times = document.getElementById('time');
-const beer = document.getElementById('beer');
-const wine = document.getElementById('wine');
-const shot = document.getElementById('shot');
-const plusbeer = document.getElementById('plusbeer');
-const minusbeer = document.getElementById('minusbeer');
-const pluswine = document.getElementById('pluswine');
-const minuswine = document.getElementById('minuswine');
-const plusshot = document.getElementById('plusshot');
-const minusshot = document.getElementById('minusshot');
-const bloodAlcohol = document.getElementById('bloodalcohol');
-const form = document.getElementById('form');
-const submit = document.getElementById('submit');
-const result = document.getElementById('result');
-const goBack = document.getElementById('goback');
-const descriptionTitle = document.getElementById('descriptiontitle');
-const description = document.getElementById('description');
-const sober = document.getElementById('sober');
-// const sex =  document.querySelector('input[name="sex"]:checked').value;
-
-//console.log(new Date().toLocaleString());
-
 plusbeer.onclick = () => {
   beer.value++;
 };
@@ -47,7 +24,6 @@ minusshot.onclick = () => {
 
 submit.onclick = () => { 
   if(checkRequiredFields()) {
-    setNaNsToZeros();
     setBloodAlcoholText();
     result.classList.remove('hidden');
     form.classList.add('hidden');
@@ -64,26 +40,18 @@ const checkRequiredFields = () => {
     alert('Please set weight and your gender!');
     return false;
   }
+  if(parseInt(beer.value) < 0 || parseInt(wine.value) < 0 || parseInt(shot.value) < 0) {
+    alert('Minus drink does not exist!');
+    return false;
+  }
   return true;
-};
-
-const setNaNsToZeros = () => {
-  if(isNaN(parseInt(beer.value))) {
-    beer.value = 0;
-  }
-  if(isNaN(parseInt(wine.value))) {
-    wine.value = 0;
-  }
-  if(isNaN(parseInt(shot.value))) {
-    shot.value = 0;
-  }
 };
 
 const setBloodAlcoholText = () => {
   var grammBeer = parseInt(beer.value) * 4.5 * 0.8; 
   var grammWine = parseInt(wine.value) * 12 * 0.8;
   var grammShot = parseInt(shot.value) * 40 * 0.8;
-  var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / (kg.value * genderNumber())) - parseInt(times.value) * 0.15;
+  var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / (kg.value * genderNumber())) - parseInt(time.value) * 0.15;
   bloodAlcohol.textContent = bloodAlcoholText;
   setDescription(bloodAlcoholText);
   sober.textContent = bloodAlcoholText / 0.15;
