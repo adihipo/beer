@@ -5,67 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <title>Beer</title>
 </head>
 <body>
   <div id="wrapper">
-    <div id="form">
-    <div id="title">
+    <div id="banner">
+      <img src="/static/pics/alcohol.jpg" alt="banner">
       <h1>Blood Alcohol Calculator</h1>
     </div>
-    <div id="weight">
-      <span>Enter your weight please!</span>
-      <input type="number" id="kg" required>
+    <div id="content">
+      <div id="form">
+        <div id="weight">
+          <span>Enter your weight please!</span>
+          <input type="number" id="kg" required>
+        </div>
+        <div id="sex">
+          <span>female</span>
+          <input type="radio" name="sex" id="female" value="female" >
+          <span>male</span>
+          <input type="radio" name="sex" id="male" value="male" >
+        </div>
+        <div id="time-div">
+          <span>What time was your last drink!</span>
+          <select id="time"></select>
+        </div>
+        <div id="beer-div">
+          <img class="alcohol" src="/static/pics/beer.jpg"  alt="BEER">
+          <input type="number" id="beer">
+          <img id="plusbeer" class="plus minus" src="/static/pics/plus.png" alt="PLUS">
+          <img id="minusbeer" class="plus minus" src="/static/pics/minus.png" alt="MINUS">
+        </div>
+        <div id="wine-div">
+          <img  class="alcohol"src="/static/pics/wine.jpg"  alt="WINE">
+          <input type="number" id="wine">
+          <img id="pluswine" class="plus minus"src="/static/pics/plus.png" alt="PLUS">
+          <img id="minuswine" class="plus minus"src="/static/pics/minus.png" alt="MINUS">
+        </div>
+        <div id="shot-div">
+          <img class="alcohol" src="/static/pics/shot.jpg"  alt="SHOT">
+          <input type="number" id="shot">
+          <img id="plusshot" class="plus minus" src="/static/pics/plus.png" alt="PLUS">
+          <img id="minusshot" class="plus minus" src="/static/pics/minus.png" alt="MINUS">
+        </div>
+        <div class="button" >
+          <button id="submit">Lets see!</button>
+        </div>
+      </div>
+      <div id="result">
+        <div class="button">
+          <button id="goback">Go back!</button>
+        </div>
+        <p id="bloodalcohol"></p>
+        <h2 id="descriptiontitle"></h2>
+        <p id="description"></p>
+        <p id="sober"></p>
+      </div>
     </div>
-    <div id="sex">
-      <span>female</span>
-      <input type="radio" name="sex" id="female" value="female" >
-      <span>male</span>
-      <input type="radio" name="sex" id="male" value="male" >
-    </div>
-    <div id="time-div">
-      <span>What time was your last drink!</span>
-      <select id="time">
-        </select>
-    </div>
-    <div id="beer-div">
-      <img class="alcohol" src="/static/pics/beer.jpg"  alt="BEER">
-      <input type="number" id="beer">
-      <img id="plusbeer" class="plus minus" src="/static/pics/plus.png" alt="PLUS">
-      <img id="minusbeer" class="plus minus" src="/static/pics/minus.png" alt="MINUS">
-    </div>
-    <div id="wine-div">
-      <img  class="alcohol"src="/static/pics/wine.jpg"  alt="WINE">
-      <input type="number" id="wine">
-      <img id="pluswine" class="plus minus"src="/static/pics/plus.png" alt="PLUS">
-      <img id="minuswine" class="plus minus"src="/static/pics/minus.png" alt="MINUS">
-    </div>
-    <div id="shot-div">
-      <img class="alcohol" src="/static/pics/shot.jpg"  alt="SHOT">
-      <input type="number" id="shot">
-      <img id="plusshot" class="plus minus" src="/static/pics/plus.png" alt="PLUS">
-      <img id="minusshot" class="plus minus" src="/static/pics/minus.png" alt="MINUS">
-    </div>
-    <div class="button" >
-        <button id="submit">Lets see!</button>
-    </div>
-  </div>
-  <div id="result">
-
-    <div class="button">
-      <button id="goback">Go back!</button>
-    </div>
-    <p id="bloodalcohol"></p>
-    <h2 id="descriptiontitle"></h2>
-    <p id="description"></p>
-    <p id="sober"></p>
-    
-
-    </div>
-
   </div>
   
-
   <script src="/static/js/dom.js"></script>
   <script src="/static/js/calculatorDom.js"></script>
 </body>
