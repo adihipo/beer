@@ -38,7 +38,8 @@ const getGiphy = (alcoholLevel) => {
 
 const renderHTML = (data) => {
     htmlString ="";
+    img.innerHTML="";
         htmlString += '<img class="img" src="' + data.data[Math.floor(Math.random() * 10)].images.original.url + '">'; 
     
-    result.insertAdjacentHTML('beforeend', htmlString);
+    img.insertAdjacentHTML('beforeend', htmlString);
 };

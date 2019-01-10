@@ -99,3 +99,16 @@ input[type=number]::-webkit-outer-spin-button {
 #personinfo{
   text-align: center;
 }
+.gif{  
+  float: left;
+  width: 46%;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 15px;
+}
+#img img{
+  border-radius: 15px;
+  float: right;
+  width: 400px;
+  height: 400px;
+}
