@@ -11,11 +11,13 @@
 <body>
   <div id="wrapper">
     <div id="banner">
-      <img src="/static/pics/alcohol.jpg" alt="banner">
-      <h1>Blood Alcohol Calculator</h1>
+      <img class="banner left" src="/static/pics/alcohol.jpg" alt="banner">
+      <h1 class="banner">Blood Alcohol Calculator</h1>
+      <img class="banner right" src="/static/pics/alcohol.jpg" alt="banner">
     </div>
     <div id="content">
       <div id="form">
+        <div id="personinfo">
         <div id="weight">
           <span>Enter your weight please!</span>
           <input type="number" id="kg" required>
@@ -29,6 +31,7 @@
         <div id="time-div">
           <span>What time was your last drink!</span>
           <select id="time"></select>
+        </div>
         </div>
         <div id="beer-div" class="alcohol-container">
           <div class="alcohol beer" style="background-image: url('/static/pics/beer.jpg');"></div>
@@ -58,14 +61,14 @@
           <button id="submit">Lets see!</button>
         </div>
       </div>
-      <div id="result">
-        <div class="button">
-          <button id="goback">Go back!</button>
-        </div>
+      <div id="result" class="hidden">
         <p id="bloodalcohol"></p>
         <h2 id="descriptiontitle"></h2>
         <p id="description"></p>
         <p id="sober"></p>
+        <div class="button">
+            <button id="goback">Go back!</button>
+        </div>
       </div>
     </div>
   </div>

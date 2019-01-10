@@ -5,17 +5,11 @@ body {
 }
 
 #banner {
-  max-height: 100px;
-  overflow: hidden;
+  height: 100px;
   position: relative;
   margin: 0 0 15px 0;
   border-radius: 15px;
-}
-
-#content {
-  background-color: burlywood;
-  padding: 20px;
-  border-radius: 15px;
+  background-color: black;
 }
 
 #banner h1 {
@@ -26,6 +20,27 @@ body {
   text-align: center;
   color: white;
   font-size: 50px;
+}
+
+#banner img {
+width: auto;
+height: 100px;
+}
+
+.left {
+  margin-left: 10%;
+  float: left;
+}
+
+.right {
+  margin-right: 10%;
+  float: right;
+}
+
+#content {
+  background-color: burlywood;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 input[type="number"] {
@@ -79,4 +94,8 @@ input[type=number]::-webkit-outer-spin-button {
   width: 36px;
   height: 36px;
   padding: 10px 7px;
+}
+
+#personinfo{
+  text-align: center;
 }
