@@ -28,6 +28,13 @@ body {
   font-size: 50px;
 }
 
+.alcohol-container {
+  width: 28.66%;
+  margin: 1%;
+  padding: 1%;
+  display: inline-block;
+}
+
 input[type="number"] {
   -webkit-appearance: textfield;
      -moz-appearance: textfield;
@@ -51,9 +58,10 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
 }
 
-.alcohol{
+.alcohol {
   width: 200px;
-  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .plus{
