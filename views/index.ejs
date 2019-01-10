@@ -9,6 +9,7 @@
 </head>
 <body>
   <div id="wrapper">
+    <div id="form">
     <div id="title">
       <h1>Blood Alcohol Calculator</h1>
     </div>
@@ -22,16 +23,35 @@
         </select>
     </div>
     <div id="beer-div">
-      <img src="/static/pics/beer.jpg" alt="BEER">
+      <img class="alcohol" src="/static/pics/beer.jpg"  alt="BEER">
       <input type="number" id="beer">
+      <img  class="plus minus" src="/static/pics/plus.png" alt="PLUS">
+      <img class="plus minus" src="/static/pics/minus.png" alt="MINUS">
     </div>
     <div id="wine-div">
-      <img src="/static/pics/wine.jpg" alt="WINE">
+      <img  class="alcohol"src="/static/pics/wine.jpg"  alt="WINE">
       <input type="number" id="wine">
+      <img class="plus minus"src="/static/pics/plus.png" alt="PLUS">
+      <img class="plus minus"src="/static/pics/minus.png" alt="MINUS">
     </div>
     <div id="shot-div">
-      <img src="/static/pics/shot.jpg" alt="SHOT">
+      <img class="alcohol" src="/static/pics/shot.jpg"  alt="SHOT">
       <input type="number" id="shot">
+      <img class="plus minus" src="/static/pics/plus.png" alt="PLUS">
+      <img class="plus minus" src="/static/pics/minus.png" alt="MINUS">
+    </div>
+    <div class="button" >
+        <button id="submit">Lets see!</button>
+    </div>
+  </div>
+  <div id="result">
+
+    <div class="button">
+      <button id="goback">Go back!</button>
+    </div>
+    <p id="bloodalcohol"></p>
+    
+
     </div>
 
   </div>
