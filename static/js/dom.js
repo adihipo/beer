@@ -104,3 +104,16 @@ shot.onchange = () => {
     shot.value = 0;
   }
 };
+
+submit.onclick = () => { 
+  if(checkRequiredFields()) {
+    setBloodAlcoholText();
+    result.classList.remove('hidden');
+    form.classList.add('hidden');
+  }
+};
+
+goBack.onclick = () => {
+  form.classList.remove('hidden');
+  result.classList.add('hidden');
+};
