@@ -21,7 +21,6 @@ const img =  document.getElementById('img');
 const radios = document.getElementsByName('sex');
 const femaleLabel = document.getElementById('femalelabel');
 const maleLabel = document.getElementById('malelabel');
->>>>>>> 633925009722af478cc388aa3d0f75a968be8836
 
 var timer = 0;
 
@@ -105,4 +104,30 @@ shot.onchange = () => {
   if(parseInt(shot.value) <= 0) {
     shot.value = 0;
   }
+};
+
+submit.onclick = () => { 
+  if(checkRequiredFields()) {
+    setBloodAlcoholText();
+    result.classList.remove('hidden');
+    form.classList.add('hidden');
+  }
+};
+
+goBack.onclick = () => {
+  form.classList.remove('hidden');
+  result.classList.add('hidden');
+};
+
+submit.onclick = () => { 
+  if(checkRequiredFields()) {
+    setBloodAlcoholText();
+    result.classList.remove('hidden');
+    form.classList.add('hidden');
+  }
+};
+
+goBack.onclick = () => {
+  form.classList.remove('hidden');
+  result.classList.add('hidden');
 };
