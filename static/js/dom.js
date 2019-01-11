@@ -89,19 +89,19 @@ const checkRequiredFields = () => {
 };
 
 beer.onchange = () => {
-  if(parseInt(beer.value) <= 0) {
+  if(parseInt(beer.value) <= 0 || isNaN(parseInt(beer.value))) {
     beer.value = 0;
   }
 };
 
 wine.onchange = () => {
-  if(parseInt(wine.value) <= 0) {
+  if(parseInt(wine.value) <= 0 || isNaN(parseInt(wine.value))) {
     wine.value = 0;
   }
 };
 
 shot.onchange = () => {
-  if(parseInt(shot.value) <= 0) {
+  if(parseInt(shot.value) <= 0 || isNaN(parseInt(shot.value))) {
     shot.value = 0;
   }
 };

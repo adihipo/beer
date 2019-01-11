@@ -3,10 +3,10 @@ const setBloodAlcoholText = () => {
   var grammWine = parseInt(wine.value) * 1 * 12 * 0.8;
   var grammShot = parseInt(shot.value) * 0.4 * 40 * 0.8;
   var bloodAlcoholText = ((grammBeer + grammWine + grammShot) / (kg.value * genderNumber())) - parseInt(time.value) * 0.15;
-  bloodAlcohol.textContent = bloodAlcoholText;
+  bloodAlcohol.textContent = 'Your blood alcohol is: ' + Math.round(bloodAlcoholText * 10000) / 10000;
   getGiphy(bloodAlcoholText);
   setDescription(bloodAlcoholText);
-  sober.textContent = bloodAlcoholText / 0.15;
+  sober.textContent = 'You can drive after ' + Math.round((bloodAlcoholText / 0.15) * 10) / 10 + ' hours.';
 };
 
 const genderNumber = () => {

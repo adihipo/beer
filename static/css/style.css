@@ -28,9 +28,16 @@ width: auto;
 height: 100px;
 }
 
-#personinfo, #result {
+#personinfo, .resultinfo {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+#personinfo {
   padding: 5px;
+}
+
+.resultinfo {
+  width: 70%;
 }
 
 .left {
@@ -52,11 +59,12 @@ height: 100px;
 select, option {
   font-weight: 900;
   outline: none;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   font-size: 20px;
   border-radius: 10px;
   font-family: 'Indie Flower', cursive;
+  padding-left: 20px;
 }
 
 input[type=radio] {
@@ -124,7 +132,30 @@ input[type=number]::-webkit-outer-spin-button {
 
 #personinfo{
   text-align: center;
+  width: 75%;
+  border-radius: 15px;
+  margin: 0 auto;
 }
+
+#bloodalcohol {
+  text-decoration: underline;
+}
+
+.description-wrapper {
+  text-align: center;
+  background-color: rgba(230, 230, 230, 0.7);
+  border-radius: 15px;
+}
+
+#bloodalcohol {
+  text-align: center;
+}
+
+#weight, #sex {
+  display: inline;
+  margin: 0 40px;
+}
+
 .gif{  
   float: left;
   width: 46%;
@@ -135,9 +166,41 @@ input[type=number]::-webkit-outer-spin-button {
 #img img{
   border-radius: 15px;
   float: right;
-  width: 400px;
-  height: 400px;
+  margin-right: 150px;
+  width: 300px;
+  height: 300px;
 }
+
+.alcohol p {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+button {
+  display: block;
+  outline: none;
+  background-color: brown;
+  border: double black;
+  border-radius: 15px;
+  color: black;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 20px auto 0px auto;
+  background-image: url("/static/pics/bubbles.jpg");
+  background-size: cover;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+}
+<<<<<<< HEAD
 #footer{
   height: 150px;
   position: relative;
@@ -161,4 +224,10 @@ width: 43%;
 margin: 1%;
 padding: 1%;
 max-height: 150px;
+=======
+
+button:hover {
+  border-style: groove;
+  text-decoration: underline;
+>>>>>>> a73da0d1ba753a90d7d60df619f6696af11a6f02
 }
