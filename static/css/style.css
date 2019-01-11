@@ -6,26 +6,26 @@ body {
 }
 
 #banner {
-  height: 100px;
+  height: 70px;
   position: relative;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   border-radius: 15px;
   background-color: black;
 }
 
 #banner h1 {
   position: absolute;
-  top: 20px;
   margin: 0;
+  top: 10px;
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #banner img {
 width: auto;
-height: 100px;
+height: 70px;
 }
 
 #personinfo, .resultinfo {
@@ -41,12 +41,12 @@ height: 100px;
 }
 
 .left {
-  margin-left: 10%;
+  margin-left: 15%;
   float: left;
 }
 
 .right {
-  margin-right: 10%;
+  margin-right: 15%;
   float: right;
 }
 
@@ -167,8 +167,8 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 15px;
   float: right;
   margin-right: 150px;
-  width: 300px;
-  height: 300px;
+  width: 274px;
+  height: 274px;
 }
 
 .alcohol p {
@@ -204,8 +204,9 @@ button {
   height: 120px;
   position: relative;
   border-radius: 15px;
-  margin-top: 10px;
-  background:url(/static/pics/brickwall.jpg) no-repeat;
+  margin-top: -20px;
+  background:url("/static/pics/brickwall.jpg") no-repeat;
+  z-index: -1;
 }
 
 #footer ul{

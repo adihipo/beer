@@ -28,13 +28,13 @@ const setDescription = (number) => {
     descriptiontext = 'You feel euphoric and free because of alcohol. You should do something silly!';
   } else if(number < 2.1) {
     title = 'Pumped (1.2 - 2.1)';
-    descriptiontext = 'There is some inbalance in your mood. You may do something that you normally wouldn\'t';
+    descriptiontext = 'There is some inbalance in your mood. You may do something that you normally wouldn\'t.';
   } else if(number < 2.8) {
     title = 'Confused (2.1 - 2.8)';
-    descriptiontext = 'Movements geting shaky. Vision gets blurry. Maybe you even don\'t know where you are. You can start feeling sick';
+    descriptiontext = 'Movements get shaky. Vision gets blurry. Maybe you even don\'t know where you are. You may start feeling sick.';
   } else if(number < 3.8) {
     title = 'Sleepy (2.8 - 3.8)';
-    descriptiontext = 'Moves uncoordinated and slow. Reaction time is really bad. You may experience extreme nausea, vomiting. You can fall asleep anywhere even in any uncomfortable position.';
+    descriptiontext = 'Moves uncoordinated and slow. You may experience extreme nausea, vomiting. You can fall in any position.';
   } else if(number < 5) {
     title = 'Coma (3.8 - 5)';
     descriptiontext = 'Total loss of consciousness and low body temperature. Your circulation and breathing become uncoordinated.';
