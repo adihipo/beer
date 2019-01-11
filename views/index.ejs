@@ -36,7 +36,9 @@
         </div>
         </div>
         <div id="beer-div" class="alcohol-container">
-          <div class="alcohol beer" style="background-image: url('/static/pics/beer.jpg');"></div>
+          <div class="alcohol beer" style="background-image: url('/static/pics/beer.jpg');">
+            <p>5 dl</p>
+          </div>
           <div class="beer">
             <img id="plusbeer" class="plus" src="/static/pics/plus.png" alt="PLUS">
             <input type="number" id="beer">
@@ -44,7 +46,9 @@
           </div>
         </div>
         <div id="wine-div" class="alcohol-container">
-          <div class="alcohol wine" style="background-image: url('/static/pics/wine.jpg');"></div>
+          <div class="alcohol wine" style="background-image: url('/static/pics/wine.jpg');">
+            <p>1 dl</p>
+          </div>
           <div class="wine">
             <img id="pluswine" class="plus"src="/static/pics/plus.png" alt="PLUS">
             <input type="number" id="wine">
@@ -52,7 +56,9 @@
           </div>
         </div>
         <div id="shot-div" class="alcohol-container">
-          <div class="alcohol shot" style="background-image: url('/static/pics/shot.jpg');"></div>
+          <div class="alcohol shot" style="background-image: url('/static/pics/shot.jpg');">
+            <p>4 cl</p>
+          </div>
           <div class="shot">
             <img id="plusshot" class="plus" src="/static/pics/plus.png" alt="PLUS">
             <input type="number" id="shot">
@@ -64,11 +70,13 @@
         </div>
       </div>
       <div id="result" class="hidden">
-        <div class="gif">
-        <p id="bloodalcohol"></p>
-        <h2 id="descriptiontitle"></h2>
-        <p id="description"></p>
-        <p id="sober"></p>
+        <div class="gif resultinfo">
+          <p id="bloodalcohol"></p>
+          <div class="description-wrapper">
+            <h2 id="descriptiontitle"></h2>
+            <p id="description"></p>
+          </div>
+          <p id="sober"></p>
         </div>
         <div class="gif" id="img"></div>
         <div class="button">
