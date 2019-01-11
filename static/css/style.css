@@ -200,7 +200,6 @@ button {
   font-size: 30px;
   font-family: 'Indie Flower', cursive;
 }
-<<<<<<< HEAD
 #footer{
   height: 150px;
   position: relative;
@@ -224,10 +223,9 @@ width: 43%;
 margin: 1%;
 padding: 1%;
 max-height: 150px;
-=======
+}
 
 button:hover {
   border-style: groove;
   text-decoration: underline;
->>>>>>> a73da0d1ba753a90d7d60df619f6696af11a6f02
 }
