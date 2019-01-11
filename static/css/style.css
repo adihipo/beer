@@ -138,3 +138,27 @@ input[type=number]::-webkit-outer-spin-button {
   width: 400px;
   height: 400px;
 }
+#footer{
+  height: 150px;
+  position: relative;
+  border-radius: 15px;
+  margin-top: 10px;
+  background:url(/static/pics/brickwall.jpg) no-repeat;
+}
+#footer ul{
+  list-style-type: none;
+  width: 20px;
+  height: auto;
+}
+#footer img{
+  width: 30px;
+  height: auto;
+}
+.git{
+display: inline-block;
+height: auto;
+width: 43%;
+margin: 1%;
+padding: 1%;
+max-height: 150px;
+}
