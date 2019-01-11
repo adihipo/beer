@@ -235,12 +235,10 @@ button:hover {
   border-style: groove;
   text-decoration: underline;
 }
+
 .profil{
   float: left;
   width: 150px;
   height: auto;
   border-radius: 50px;
-
 }
-  
-
