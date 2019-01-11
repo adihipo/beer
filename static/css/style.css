@@ -201,23 +201,28 @@ button {
   font-family: 'Indie Flower', cursive;
 }
 #footer{
-  height: 150px;
+  height: 120px;
   position: relative;
   border-radius: 15px;
   margin-top: 10px;
   background:url(/static/pics/brickwall.jpg) no-repeat;
 }
+
 #footer ul{
+  display:inline-block;
   list-style-type: none;
   width: 20px;
   height: auto;
+  margin: 5px 0 0 0;
 }
-#footer img{
+
+.social{
   width: 30px;
   height: auto;
 }
+
 .git{
-display: inline-block;
+display: inline-block;  
 height: auto;
 width: 43%;
 margin: 1%;
@@ -229,3 +234,11 @@ button:hover {
   border-style: groove;
   text-decoration: underline;
 }
+.profil{
+  float: left;
+  width: 150px;
+  height: auto;
+  border-radius: 50px;
+
+}
+  
