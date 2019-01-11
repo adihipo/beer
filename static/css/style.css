@@ -3,60 +3,60 @@ body {
   font-family: 'Indie Flower', cursive;
   font-size: 25px;
   font-weight: 900;
-}
-
-#banner {
-  height: 100px;
+ }
+ 
+ #banner {
+  height: 70px;
   position: relative;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   border-radius: 15px;
   background-color: black;
-}
-
-#banner h1 {
+ }
+ 
+ #banner h1 {
   position: absolute;
-  top: 20px;
   margin: 0;
+  top: 10px;
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 50px;
-}
-
-#banner img {
-width: auto;
-height: 100px;
-}
-
-#personinfo, .resultinfo {
+  font-size: 40px;
+ }
+ 
+ #banner img {
+ width: auto;
+ height: 70px;
+ }
+ 
+ #personinfo, .resultinfo {
   background-color: rgba(255, 255, 255, 0.4);
-}
-
-#personinfo {
+ }
+ 
+ #personinfo {
   padding: 5px;
-}
-
-.resultinfo {
+ }
+ 
+ .resultinfo {
   width: 70%;
-}
-
-.left {
-  margin-left: 10%;
+ }
+ 
+ .left {
+  margin-left: 15%;
   float: left;
-}
-
-.right {
-  margin-right: 10%;
+ }
+ 
+ .right {
+  margin-right: 15%;
   float: right;
-}
-
-#content {
+ }
+ 
+ #content {
   background: url("/static/pics/woodenwall.jpeg") no-repeat;
   padding: 20px;
   border-radius: 15px;
-}
-
-select, option {
+ }
+ 
+ select, option {
   font-weight: 900;
   outline: none;
   width: 150px;
@@ -65,15 +65,15 @@ select, option {
   border-radius: 10px;
   font-family: 'Indie Flower', cursive;
   padding-left: 20px;
-}
-
-input[type=radio] {
+ }
+ 
+ input[type=radio] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
        appearance: textfield;
-}
-
-input[type="number"] {
+ }
+ 
+ input[type="number"] {
   -webkit-appearance: textfield;
      -moz-appearance: textfield;
           appearance: textfield;
@@ -85,30 +85,30 @@ input[type="number"] {
           border-style: dashed;
           border-radius: 15px;
           text-align: center;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+ }
+ 
+ input[type=number]::-webkit-inner-spin-button,
+ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-}
-
-.hidden {
+ }
+ 
+ .hidden {
   display: none;
-}
-
-.checked {
+ }
+ 
+ .checked {
   text-decoration: underline;
-}
-
-.alcohol-container {
+ }
+ 
+ .alcohol-container {
   width: 28.66%;
   margin: 1%;
   padding: 1%;
   display: inline-block;
   min-width: 250px;
-}
-
-.alcohol {
+ }
+ 
+ .alcohol {
   width: 200px;
   height: 150px;
   overflow: hidden;
@@ -116,62 +116,62 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 15px;
   margin-right: 15px;
   float: left;
-}
-
-.beer, .wine, .shot{
+ }
+ 
+ .beer, .wine, .shot{
   display: inline-block;
   max-height: 150px;
-}
-
-.plus{
+ }
+ 
+ .plus{
   display: block;
   width: 36px;
   height: 36px;
   padding: 10px 7px;
-}
-
-#personinfo{
+ }
+ 
+ #personinfo{
   text-align: center;
   width: 75%;
   border-radius: 15px;
   margin: 0 auto;
-}
-
-#bloodalcohol {
+ }
+ 
+ #bloodalcohol {
   text-decoration: underline;
-}
-
-.description-wrapper {
+ }
+ 
+ .description-wrapper {
   text-align: center;
   background-color: rgba(230, 230, 230, 0.7);
   border-radius: 15px;
-}
-
-#bloodalcohol {
+ }
+ 
+ #bloodalcohol {
   text-align: center;
-}
-
-#weight, #sex {
+ }
+ 
+ #weight, #sex {
   display: inline;
   margin: 0 40px;
-}
-
-.gif{  
+ }
+ 
+ .gif{
   float: left;
   width: 46%;
   margin: 1%;
   padding: 1%;
   border-radius: 15px;
-}
-#img img{
+ }
+ #img img{
   border-radius: 15px;
   float: right;
   margin-right: 150px;
-  width: 300px;
-  height: 300px;
-}
-
-.alcohol p {
+  width: 274px;
+  height: 274px;
+ }
+ 
+ .alcohol p {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 15px;
@@ -180,9 +180,9 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 10px;
   margin-top: 80px;
   font-size: 30px;
-}
-
-button {
+ }
+ 
+ button {
   display: block;
   outline: none;
   background-color: brown;
@@ -199,49 +199,89 @@ button {
   font-weight: 900;
   font-size: 30px;
   font-family: 'Indie Flower', cursive;
-}
-#footer{
+ }
+ #footer{
   height: 120px;
   position: relative;
   border-radius: 15px;
-  margin-top: 10px;
+  margin-top: -20px;
+  background:url("/static/pics/brickwall.jpg") no-repeat;
+  z-index: -1;
+ }
+ 
+ #footer ul{
+  display:inline-block;
+  list-style-type: none;
+  width: 20px;
+  height: auto;
+  margin: 5px 0 0 0;
+ }
+ 
+ .social{
+  width: 30px;
+  height: auto;
+ }
+ 
+ .git{
+ display: inline-block;
+ height: auto;
+ width: 43%;
+ margin: 1%;
+ padding: 1%;
+ max-height: 150px;
+ }
+ 
+ button:hover {
+  border-style: groove;
+  text-decoration: underline;
+ }
+ .profil{
+  float: left;
+  width: 150px;
+  height: auto;
+  border-radius: 50px;
+ 
+ }
+ #footer{
+  height: 120px;
+  position: relative;
+  border-radius: 15px;
+  margin-top: -20px;
+  z-index: -1;
   background:url(/static/pics/brickwall.jpg) no-repeat;
-  
-}
-
-#footer ul{
+ 
+ }
+ 
+ #footer ul{
   float: right;
   list-style-type: none;
   width: 20px;
   height: auto;
   margin: 5px 20px 0 0;
-}
-
-.social{
+ }
+ 
+ .social{
   width: 30px;
   height: auto;
-}
-
-.git{
-display: inline-block;  
-height: auto;
-width: 43%;
-margin: 1%;
-padding: 1%;
-max-height: 150px;
-}
-
-button:hover {
+ }
+ 
+ .git{
+ display: inline-block;
+ height: auto;
+ width: 43%;
+ margin: 1%;
+ padding: 1%;
+ max-height: 150px;
+ }
+ 
+ button:hover {
   border-style: groove;
   text-decoration: underline;
-}
-.profil{
+ }
+ 
+ .profil{
   float: right;
   width: 150px;
   height: auto;
   border-radius: 50px;
-}
-
-
-  
-
+ }
