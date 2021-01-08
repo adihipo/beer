@@ -1,12 +1,12 @@
 const getGiphy = (alcoholLevel) => {
 
-    const normal = 'http://api.giphy.com/v1/gifs/search?q=ok&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
-    const euphoric = 'http://api.giphy.com/v1/gifs/search?q=euphoric&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
-    const excited = 'http://api.giphy.com/v1/gifs/search?q=excited&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
-    const confused = 'http://api.giphy.com/v1/gifs/search?q=confused&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
-    const sleepy = 'http://api.giphy.com/v1/gifs/search?q=sleepy+drunk&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
-    const coma = 'http://api.giphy.com/v1/gifs/search?q=coma&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
-    const dead = 'http://api.giphy.com/v1/gifs/search?q=dead&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
+    const normal = 'https://api.giphy.com/v1/gifs/search?q=ok&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
+    const euphoric = 'https://api.giphy.com/v1/gifs/search?q=euphoric&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
+    const excited = 'https://api.giphy.com/v1/gifs/search?q=excited&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
+    const confused = 'https://api.giphy.com/v1/gifs/search?q=confused&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
+    const sleepy = 'https://api.giphy.com/v1/gifs/search?q=sleepy+drunk&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
+    const coma = 'https://api.giphy.com/v1/gifs/search?q=coma&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
+    const dead = 'https://api.giphy.com/v1/gifs/search?q=dead&api_key=LCTqQxbLKacDnf61FqHGzFLTeW6qZPI8';
 
     const myReq = new XMLHttpRequest();
     if(alcoholLevel < 0.5){
