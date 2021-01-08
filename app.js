@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use('/static', express.static('static'));
@@ -10,5 +10,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('Listening to port');
+    console.log('Our app is running!');
 });
